@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Grammar Test</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f4f4f9; }
+        .test-container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .section { margin-bottom: 30px; }
+        .question { margin-bottom: 15px; }
+        input[type="text"] { padding: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        .options { margin-left: 20px; }
+        button { background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #2980b9; }
+        #result { margin-top: 20px; font-weight: bold; font-size: 20px; color: #27ae60; display: none; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+
+<div class="test-container">
+    <h1>Review Grammar Test</h1>
+    <p><strong>Time allocation:</strong> 45 minutes</p>
+
+    <form id="quizForm">
+        <div class="section">
+            <h2>1. Read and write the numbers</h2>
+            <div class="question">thirteen: <input type="text" data-ans="13"></div>
+            <div class="question">fourteen: <input type="text" data-ans="14"></div>
+            <div class="question">fifteen: <input type="text" data-ans="15"></div>
+            <div class="question">sixteen: <input type="text" data-ans="16"></div>
+            <div class="question">twenty: <input type="text" data-ans="20"></div>
+            <div class="question">fifty-five: <input type="text" data-ans="55"></div>
+            <div class="question">ninety-three: <input type="text" data-ans="93"></div>
+            <div class="question">one million: <input type="text" data-ans="1000000"></div>
+            <div class="question">seventy: <input type="text" data-ans="70"></div>
+            <div class="question">one thousand: <input type="text" data-ans="1000"></div>
+            <div class="question">eighty-eight: <input type="text" data-ans="88"></div>
+            <div class="question">twelve: <input type="text" data-ans="12"></div>
+            <div class="question">one hundred and sixty-five: <input type="text" data-ans="165"></div>
+            <div class="question">five hundred and fifteen: <input type="text" data-ans="515"></div>
+            <div class="question">one thousand one hundred and twenty: <input type="text" data-ans="1120"></div>
+        </div>
+
+        <div class="section">
+            <h2>2. Write the following numbers (Words)</h2>
+            <div class="question">7: <input type="text" data-ans="seven"></div>
+            <div class="question">53: <input type="text" data-ans="fifty-three"></div>
+            <div class="question">72: <input type="text" data-ans="seventy-two"></div>
+            <div class="question">81: <input type="text" data-ans="eighty-one"></div>
+            <div class="question">96: <input type="text" data-ans="ninety-six"></div>
+            <div class="question">12: <input type="text" data-ans="twelve"></div>
+            <div class="question">200: <input type="text" data-ans="two hundred"></div>
+            <div class="question">460: <input type="text" data-ans="four hundred and sixty"></div>
+        </div>
+
+        <div class="section">
+            <h2>3. Reorder the Ordinal Numbers</h2>
+            <div class="question">HNTIN: <input type="text" data-ans="ninth"> (9th)</div>
+            <div class="question">FLEWTH: <input type="text" data-ans="twelfth"> (12th)</div>
+            <div class="question">RIHTIHETT: <input type="text" data-ans="thirtieth"> (30th)</div>
+            <div class="question">WETYNT-IGHTHE: <input type="text" data-ans="twenty-eighth"> (28th)</div>
+            <div class="question">GTYHEI-TNIHN: <input type="text" data-ans="eighty-ninth"> (89th)</div>
+            <div class="question">YTHIRT-SRIFT: <input type="text" data-ans="thirty-first"> (31st)</div>
+            <div class="question">ENDOSC: <input type="text" data-ans="second"> (2nd)</div>
+            <div class="question">RDTHI: <input type="text" data-ans="third"> (3rd)</div>
+        </div>
+
+        <div class="section">
+            <h2>4. Write the correct date</h2>
+            <p><em>Today is Tuesday, 3rd March.</em></p>
+            <div class="question">Yesterday, it was: <input type="text" data-ans="monday, 2nd march"></div>
+            <div class="question">Tomorrow, it will be: <input type="text" data-ans="wednesday, 4th march"></div>
+            <div class="question">The day after Wednesday is: <input type="text" data-ans="thursday"></div>
+            <div class="question">The day before Friday is: <input type="text" data-ans="thursday"></div>
+            <div class="question">Sunday is: <input type="text" data-ans="the weekend"></div>
+        </div>
+
+        <div class="section">
+            <h2>5. Plural Nouns</h2>
+            <div class="question">1. Jones has two naughty <input type="text" data-ans="children">. (child)</div>
+            <div class="question">2. A flock of wild <input type="text" data-ans="geese"> just flew overhead. (goose)</div>
+            <div class="question">3. Three tiny <input type="text" data-ans="mice"> scurried. (mouse)</div>
+            <div class="question">4. Cut the sandwich into two <input type="text" data-ans="halves">. (half)</div>
+            <div class="question">5. Cleaned my <input type="text" data-ans="teeth">. (tooth)</div>
+            <div class="question">6. The old <input type="text" data-ans="women"> at the stop. (woman)</div>
+            <div class="question">7. Sharpened the <input type="text" data-ans="knives">. (knife)</div>
+            <div class="question">8. Those <input type="text" data-ans="people"> were shouting. (person)</div>
+            <div class="question">9. Two <input type="text" data-ans="loaves"> of bread. (loaf)</div>
+            <div class="question">10. The busy <input type="text" data-ans="men"> were fixing. (man)</div>
+            <div class="question">11. A pack of <input type="text" data-ans="wolves">. (wolf)</div>
+            <div class="question">12. The farmer's <input type="text" data-ans="sheep">. (sheep)</div>
+            <div class="question">13. Young <input type="text" data-ans="ladies"> peel <input type="text" data-ans="potatoes">.</div>
+            <div class="question">14. Turned into <input type="text" data-ans="butterflies">. (butterfly)</div>
+            <div class="question">15. The <input type="text" data-ans="buffaloes"> have four <input type="text" data-ans="feet">.</div>
+        </div>
+
+        <div class="section">
+            <h2>6. This, That, These, Those</h2>
+            <div class="question">1. Look at ... birds up there. <select data-ans="those"><option>---</option><option>this</option><option>these</option><option>those</option></select></div>
+            <div class="question">2. Are ... your books over there? <select data-ans="those"><option>---</option><option>these</option><option>those</option><option>this</option></select></div>
+            <div class="question">3. My umbrella is right here. ... is my umbrella. <select data-ans="this"><option>---</option><option>that</option><option>this</option><option>these</option></select></div>
+            <div class="question">4. Those apples are red, but ... apples over here are green. <select data-ans="these"><option>---</option><option>that</option><option>this</option><option>these</option></select></div>
+        </div>
+
+        <div class="section">
+            <h2>7. Possessive Adjectives (my, your, his, her, its, our, their)</h2>
+            <div class="question">1. Where is <input type="text" data-ans="our"> classroom? We can't find it.</div>
+            <div class="question">2. Susan, is that <input type="text" data-ans="your"> pen on the table?</div>
+            <div class="question">3. B: <input type="text" data-ans="my"> name is Thomas.</div>
+            <div class="question">4. I think this is <input type="text" data-ans="her"> book. She dropped it.</div>
+            <div class="question">5. <input type="text" data-ans="their"> names are Kevin and Stewart.</div>
+        </div>
+
+        <div class="section">
+            <h2>10. Question Words</h2>
+            <div class="question">1. ... do you live? - I live in Mexico City. <select data-ans="where"><option>---</option><option>how</option><option>where</option><option>who</option></select></div>
+            <div class="question">2. ... does Michael get to work? - He drives. <select data-ans="how"><option>---</option><option>who</option><option>where</option><option>how</option></select></div>
+            <div class="question">3. ... old are you? - I'm 23. <select data-ans="how"><option>---</option><option>why</option><option>what</option><option>how</option></select></div>
+        </div>
+
+        <button type="button" onclick="calculateScore()">Submit Test</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateScore() {
+        let score = 0;
+        let total = 0;
+        const form = document.getElementById('quizForm');
+        
+        // Check text inputs
+        const inputs = form.querySelectorAll('input[type="text"]');
+        inputs.forEach(input => {
+            total++;
+            if (input.value.trim().toLowerCase() === input.getAttribute('data-ans').toLowerCase()) {
+                score++;
+                input.style.borderColor = "#27ae60";
+            } else {
+                input.style.borderColor = "#c0392b";
+            }
+        });
+
+        // Check select inputs
+        const selects = form.querySelectorAll('select');
+        selects.forEach(select => {
+            total++;
+            if (select.value.toLowerCase() === select.getAttribute('data-ans').toLowerCase()) {
+                score++;
+                select.style.borderColor = "#27ae60";
+            } else {
+                select.style.borderColor = "#c0392b";
+            }
+        });
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `Your Total Score: ${score} / ${total}`;
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+
+</body>
+</html>
